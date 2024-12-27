@@ -2,6 +2,7 @@ import About from "./components/About";
 import Features from "./components/Features";
 import Hero from "./components/Hero";
 import NavBar from "./components/Navbar";
+import FloatingImage from "./components/Story";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <About />
       <Features />
+      <FloatingImage />
     </main>
   );
 }
