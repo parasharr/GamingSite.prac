@@ -14,14 +14,14 @@ const FloatingImage = () => {
     if (!element) return;
 
     const rect = element.getBoundingClientRect();
-    const xPos = clientX - rect.left;
-    const yPos = clientY - rect.top;
+    const x = clientX - rect.left;
+    const y = clientY - rect.top;
 
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    const rotateX = ((yPos - centerY) / centerY) * -10;
-    const rotateY = ((xPos - centerX) / centerX) * 10;
+    const rotateX = ((y - centerY) / centerY) * -10;
+    const rotateY = ((x - centerX) / centerX) * 10;
 
     gsap.to(element, {
       duration: 0.3,
