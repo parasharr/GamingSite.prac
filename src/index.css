@@ -4,6 +4,32 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Webkit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent thumb */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7); /* Darker thumb on hover */
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1); /* Thumb and track color */
+}
+
+
+
 body {
   width: 100dvw;
   overflow-x: hidden;
